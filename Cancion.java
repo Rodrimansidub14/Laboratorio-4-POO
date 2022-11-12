@@ -1,142 +1,62 @@
 public class Cancion {
-    // ATRIBUTOS
-    private String nombre;
-    private String autor;
-    private String duracion;
+    private String Nombre;
+    private String Autor;
+    private String Duracion;
     private String genero;
 
-    // CONSTRUCTOR SIN PARÁMETROS
+
+
     public Cancion() {
-        nombre = "";
-        autor = "";
-        duracion = "";
-        genero = "";
     }
 
-    // CONSTRUCTOR CON PARAMETROS
-    public Cancion(String nombre, String autor, String duracion, String genero) {
-        this.nombre = nombre;
-        this.autor = autor;
-        this.duracion = duracion;
+    public Cancion(String Nombre, String Autor, String Duracion, String genero) {
+        this.Nombre = Nombre;
+        this.Autor = Autor;
+        this.Duracion = Duracion;
         this.genero = genero;
     }
 
-    // MÉTODOS
-
-    /** 
-     * @return String
-     */
     public String getNombre() {
-        return this.nombre;
+        return this.Nombre;
     }
 
-    
-    /** 
-     * @param nombre
-     */
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombre(String Nombre) {
+        this.Nombre = Nombre;
     }
 
-    
-    /** 
-     * @return String
-     */
     public String getAutor() {
-        return this.autor;
+        return this.Autor;
     }
 
-    
-    /** 
-     * @param autor
-     */
-    public void setAutor(String autor) {
-        this.autor = autor;
+    public void setAutor(String Autor) {
+        this.Autor = Autor;
     }
 
-    
-    /** 
-     * @return String
-     */
     public String getDuracion() {
-        return this.duracion;
+        return this.Duracion;
     }
 
-    
-    /** 
-     * @param duracion
-     */
-    public void setDuracion(String duracion) {
-        this.duracion = duracion;
+    public void setDuracion(String Duracion) {
+        this.Duracion = Duracion;
     }
 
-    
-    /** 
-     * @return String
-     */
     public String getGenero() {
         return this.genero;
     }
 
-    
-    /** 
-     * @param genero
-     */
     public void setGenero(String genero) {
         this.genero = genero;
     }
 
-    
-    /** 
-     * @param nombre
-     * @return Cancion
-     */
-    public Cancion nombre(String nombre) {
-        setNombre(nombre);
-        return this;
-    }
-
-    
-    /** 
-     * @param autor
-     * @return Cancion
-     */
-    public Cancion autor(String autor) {
-        setAutor(autor);
-        return this;
-    }
-
-    
-    /** 
-     * @param duracion
-     * @return Cancion
-     */
-    public Cancion duracion(String duracion) {
-        setDuracion(duracion);
-        return this;
-    }
-
-    
-    /** 
-     * @param genero
-     * @return Cancion
-     */
-    public Cancion genero(String genero) {
-        setGenero(genero);
-        return this;
-    }
-
-    
-    /** 
-     * @return String
-     */
     @Override
     public String toString() {
         return "{" +
-            " nombre='" + getNombre() + "'" +
-            ", autor='" + getAutor() + "'" +
-            ", duracion='" + getDuracion() + "'" +
+            " Nombre='" + getNombre() + "'" +
+            ", Autor='" + getAutor() + "'" +
+            ", Duracion='" + getDuracion() + "'" +
             ", genero='" + getGenero() + "'" +
             "}";
     }
+
+   
 }
