@@ -1,43 +1,43 @@
 public class Cancion {
-    private String Nombre;
-    private String Autor;
-    private String Duracion;
+    private String nombre;
+    private String artista;
     private String genero;
+    private int year;
+    private String duracion;
 
 
-
-    public Cancion() {
+    public Cancion(String nombre, String artista, String genero, int year, String duracion) {
+        this.nombre = nombre;
+        this.artista = artista;
+        this.genero = genero;
+        this.year = year;
+        this.duracion=duracion;
     }
 
-    public Cancion(String Nombre, String Autor, String Duracion, String genero) {
-        this.Nombre = Nombre;
-        this.Autor = Autor;
-        this.Duracion = Duracion;
-        this.genero = genero;
+
+
+    public String getDuracion() {
+        return this.duracion;
+    }
+
+    public void setDuracion(String duracion) {
+        this.duracion = duracion;
     }
 
     public String getNombre() {
-        return this.Nombre;
+        return this.nombre;
     }
 
-    public void setNombre(String Nombre) {
-        this.Nombre = Nombre;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public String getAutor() {
-        return this.Autor;
+    public String getArtista() {
+        return this.artista;
     }
 
-    public void setAutor(String Autor) {
-        this.Autor = Autor;
-    }
-
-    public String getDuracion() {
-        return this.Duracion;
-    }
-
-    public void setDuracion(String Duracion) {
-        this.Duracion = Duracion;
+    public void setArtista(String artista) {
+        this.artista = artista;
     }
 
     public String getGenero() {
@@ -48,15 +48,24 @@ public class Cancion {
         this.genero = genero;
     }
 
+    public int getYear() {
+        return this.year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
     @Override
     public String toString() {
         return "{" +
-            " Nombre='" + getNombre() + "'" +
-            ", Autor='" + getAutor() + "'" +
-            ", Duracion='" + getDuracion() + "'" +
+            " nombre='" + getNombre() + "'" +
+            ", artista='" + getArtista() + "'" +
             ", genero='" + getGenero() + "'" +
+            ", year='" + getYear() + "'" +
+            ", duracion='" + getDuracion() + "'" +
             "}";
     }
 
-   
+
 }

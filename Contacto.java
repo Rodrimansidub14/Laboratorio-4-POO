@@ -1,82 +1,31 @@
 public class Contacto {
-   // ATRIBUTOS
     private String nombre;
-    private String numero;
+    private String telefono;
 
-    // CONSTRUCTOR SIN PARÁMETROS
-    public Contacto() {
-        nombre = " ";
-        numero = " ";
-    }
-
-    // CONSTRUCTOR CON PARÁMETROS
-    public Contacto(String nombre, String numero) {
+    public Contacto(String nombre, String telefono) {
         this.nombre = nombre;
-        this.numero = numero;
+        this.telefono = telefono;
     }
 
-    // MÉTODOS
-    
-    /** 
-     * @return String
-     */
     public String getNombre() {
         return this.nombre;
     }
 
-    
-    /** 
-     * @param nombre
-     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    
-    /** 
-     * @return String
-     */
-    public String getNumero() {
-        return this.numero;
+    public String getTelefono() {
+        return this.telefono;
     }
 
-    
-    /** 
-     * @param numero
-     */
-    public void setNumero(String numero) {
-        this.numero = numero;
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
-
-    
-    /** 
-     * @param nombre
-     * @return Contacto
-     */
-    public Contacto nombre(String nombre) {
-        setNombre(nombre);
-        return this;
+    public String llamar(){
+        return "Llamando a "+getNombre();
     }
-
-    
-    /** 
-     * @param numero
-     * @return Contacto
-     */
-    public Contacto numero(String numero) {
-        setNumero(numero);
-        return this;
-    }
-
-    
-    /** 
-     * @return String
-     */
-    @Override
-    public String toString() {
-        return "{" +
-            " nombre='" + getNombre() + "'" +
-            ", numero='" + getNumero() + "'" +
-            "}";
+    public String finalizar(){
+        return "Llamada finalizada";
     }
 }
